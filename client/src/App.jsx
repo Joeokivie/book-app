@@ -28,18 +28,20 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-import Header from "./components/Header"
+import Header from "./components/Header";
+// import Books from './components/Books';
 
 function App() {
-    return (
-      <ApolloProvider client={client}>
-       <div className="main">
-          <Header />
-          <main>
-            <Outlet />
-          </main>
-        </div>
-      </ApolloProvider>
-    );
+  return (
+    <ApolloProvider client={client}>
+      <div className="main">
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        {/* <Books /> */}
+      </div>
+    </ApolloProvider>
+  );
 }
 export default App;

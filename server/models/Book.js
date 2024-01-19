@@ -11,19 +11,23 @@ const bookSchema = new Schema(
       maxlength: 280,
     },
     bookAuthor: {
-        type: String,
-        required: true,
-        minlength: 1,
-        maxlength: 280,
-      },
+      type: String,
+      required: true,
+      minlength: 1,
+      maxlength: 280,
+    },
     // username: {
     //   // the user that added this book
     //   type: String,
     //   required: true,
     // },
     reactions: [reactionSchema],
+    publicImageURL: {
+      type: String,
+    },
   },
   {
+    timestamps: true,
     toJSON: {
       getters: true,
     },

@@ -79,3 +79,22 @@ form div label {
 form div input {
     width: 100%;
 }
+
+.books {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.book {
+    max-width: 250px;
+    border: 1px solid gray;
+}
+
+.book img {
+    max-width: 250px;
+}
+
+.bookContent {
+    padding: 0 15px;
+}

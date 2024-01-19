@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 import { Outlet } from "react-router-dom";
 import {
   ApolloClient,
@@ -35,7 +35,9 @@ function App() {
       <ApolloProvider client={client}>
        <div className="main">
           <Header />
-          <Outlet />
+          <main>
+            <Outlet />
+          </main>
         </div>
       </ApolloProvider>
     );

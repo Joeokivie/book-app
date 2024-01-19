@@ -4,11 +4,12 @@ import UpdateList from '../components/UpdateList';
 
 function Home() {
   return (
-    <Fragment>
-      <p> Testing! </p>
-      <MyList />
-      <UpdateList />
-    </Fragment>
+    <div className={`home`}>
+      <Fragment>
+        <MyList />
+        <UpdateList />
+      </Fragment>
+    </div>
   );
 }
 
